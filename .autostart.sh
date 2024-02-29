@@ -15,4 +15,5 @@ bash ~/script.sh
 nmcli dev wifi connect HG531V1-FSRS5D password "set:Pass@47" &
 
 #set wallpaper
-feh --bg-fill ~/Downloads/dark-landscape-berserk-hd-wallpaper-preview.jpg
+feh --bg-fill ~/Downloads/Downloads/wallpaperflare.com_wallpaper.jpg
+
