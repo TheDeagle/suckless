@@ -12,15 +12,15 @@ static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
+static const char col_red[]        = "#ff0000";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  "#F5F5F5" },
+	[SchemeSel]  = { col_gray4, col_red,  "#F5F5F5" },
 };
 
 /* tagging */
-static const char *tags[] = { "term", "work", "www", "doc", "comm", "media", "ext1", "ext2" };
+static const char *tags[] = { "I", "use", "arch", "btw", "!"};
 
 static const Rule rules[] = {
 	/* xprop(1):
