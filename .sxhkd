@@ -1,3 +1,5 @@
+#REMEMBER YOU COULD ALWAYS USE XEV TO GET THE VALUE OF THE KEY
+
 #opening dmenu
 super + p
 	dmenu_run
@@ -24,12 +26,22 @@ F11
 #kill client
 ctrl + q
 	dwmc killclient
-#resize client
-KP_Left
+resize client
+ctrl + KP_Right
 	dwmc setmfact -0.015
-KP_Right
+ctrl + KP_Left
 	dwmc setmfact 0.015+
 #switch windows
 ctrl + Return
 	dwmc zoom
 
+#fullscreen
+shift + Return
+	xsetroot -name fsignal:fullscreen
+
+#switch between desktops
+ctrl + alt + Right
+	bash switch_desktops.sh Right
+ctrl + alt + Left
+	bash switch_desktops.sh Left
+#REMEMBER YOU COULD ALWAYS USE XEC TO GET THE VALUE OF THE KEY
