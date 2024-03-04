@@ -23,6 +23,7 @@ case "$direction" in
         else
             new_index="$current_index"
         fi
+	dwmc viewex $new_index
         ;;
     "Left")
         # Decrement WIN_INDEX if it's greater than the min_index
@@ -31,6 +32,7 @@ case "$direction" in
         else
             new_index="$current_index"
         fi
+	dwmc viewex $new_index
         ;;
     *)
         echo "Invalid direction. Use 'Right' or 'Left'."
@@ -39,10 +41,12 @@ case "$direction" in
 esac
 
 # Update the environment file with the new WIN_INDEX
-if grep -q '^export WIN_INDEX=' ~/.bashrc; then
+if grep -q '^export WIN_INDEX=' ~/.zshrc; then
     sed -i "s/export WIN_INDEX=.*/export WIN_INDEX=$new_index/" ~/.bashrc
+    sed -i "s/export WIN_INDEX=.*/export WIN_INDEX=$new_index/" ~/.zshrc
 else
     echo "export WIN_INDEX=$new_index" >> ~/.bashrc
+    echo "export WIN_INDEX=$new_index" >> ~/.zshrc
 fi
 
 echo "WIN_INDEX updated to $new_index"

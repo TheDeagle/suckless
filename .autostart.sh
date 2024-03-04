@@ -19,3 +19,6 @@ feh --bg-fill ~/Downloads/wallpaperflare.com_wallpaper.jpg
 
 #status bar
 ./suckless/dwmblocks/dwmblocks &
+
+#starting transparency
+picom &

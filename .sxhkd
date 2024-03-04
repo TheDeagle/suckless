@@ -5,7 +5,7 @@ super + p
 	dmenu_run
 #openin terminal
 ctrl + alt + Return
-	st
+	kitty
 #locking screen
 super + l
 	/usr/loacl/bin/slock
@@ -44,4 +44,17 @@ ctrl + alt + Right
 	bash switch_desktops.sh Right
 ctrl + alt + Left
 	bash switch_desktops.sh Left
-#REMEMBER YOU COULD ALWAYS USE XEC TO GET THE VALUE OF THE KEY
+
+#switch window tags
+alt + 1
+	dwmc tagex 0
+alt + 2
+	dwmc tagex 1
+alt + 3
+	dwmc tagex 2
+alt + 4
+	dwmc tagex 3
+alt + 5
+	dwmc tagex 4
+
+#REMEMBER YOU COULD ALWAYS USE XEV TO GET THE VALUE OF THE KEY
