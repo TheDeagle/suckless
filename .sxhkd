@@ -11,7 +11,7 @@ super + l
 	/usr/loacl/bin/slock
 #screenshot
 Print
-	$HOME/bin/scrot-full
+	bash screenshot.sh
 super + Print
 	$HOME/bin/dmenu-screenshot#opening terminal
 #focus on the stack
@@ -28,9 +28,9 @@ ctrl + q
 	dwmc killclient
 resize client
 ctrl + KP_Right
-	dwmc setmfact -0.015
-ctrl + KP_Left
 	dwmc setmfact 0.015+
+ctrl + KP_Left
+	dwmc setmfact -0.015
 #switch windows
 ctrl + Return
 	dwmc zoom
