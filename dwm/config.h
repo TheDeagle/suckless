@@ -84,6 +84,11 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
 
+void wtf(const Arg *arg)
+{
+	printf("wtf\n");
+}
+
 void
 setlayoutex(const Arg *arg)
 {
@@ -126,11 +131,14 @@ tagall(const Arg *arg)
 	tag(&((Arg){.ui = ~0}));
 }
 
+// #include "push.c"
 /* signal definitions */
 /* signum must be greater than 0 */
 /* trigger signals using `xsetroot -name "fsignal:<signame> [<type> <value>]"` */
 static Signal signals[] = {
 	/* signum           function */
+	{ "pushup",			pushup},
+	{ "pushdown",		pushdown},
 	{ "fullscreen",     fullscreen},
 	{ "focusstack",     focusstack },
 	{ "setmfact",       setmfact },

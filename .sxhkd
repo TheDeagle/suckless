@@ -16,10 +16,10 @@ super + Print
 	$HOME/bin/dmenu-screenshot#opening terminal
 #focus on the stack
 alt + Left
-	dwmc focusstack -
+	dwmc focusstack 0
 #focus down
 alt + Right
-	dwmc focusstack +
+	dwmc focusstack 1
 #toggle bar
 F11
 	dwmc togglebar
@@ -57,4 +57,9 @@ alt + 4
 alt + 5
 	dwmc tagex 4
 
+#movestack
+ctrl + Up
+	xsetroot -name fsignal:pushup
+ctrl + Down
+	xsetroot -name fsignal:pushdown
 #REMEMBER YOU COULD ALWAYS USE XEV TO GET THE VALUE OF THE KEY
